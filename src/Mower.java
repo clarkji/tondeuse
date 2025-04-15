@@ -4,6 +4,21 @@ import java.util.*;
 public class Mower {
 
     public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Usage: java Mower <input_file>");
+            return;
+        }
+
+        String inputFilePath = args[0];
+        try {
+            List<String> lines = readInputFile(inputFilePath);
+            List<Position> finalPositions = processMowers(lines);
+            for (Position pos : finalPositions) {
+                System.out.println(pos);
+            }
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
     }
 
 

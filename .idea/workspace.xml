@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824fbefc-be91-45a6-8adf-0261932818e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatique$Position.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatique.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatiqueTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/tondeuse/TondeuseAutomatiqueTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/MowerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tondeuse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tondeuse.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatique$Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatique.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tondeuse/TondeuseAutomatiqueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/tondeuse/TondeuseAutomatiqueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mower.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +31,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Mower.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.test tondeuse.executor": "Debug",
+    "JUnit.test tondeuse.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -53,17 +47,34 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Mower">
+    <configuration name="Mower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mower" />
+      <module name="tondeuse" />
+      <option name="PROGRAM_PARAMETERS" value="test.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test tondeuse" type="JUnit" factoryName="JUnit">
       <module name="tondeuse" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TondeuseAutomatiqueTest" />
+      <option name="MAIN_CLASS_NAME" value="MowerTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Mower" />
+      <item itemvalue="JUnit.test tondeuse" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Mower" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
