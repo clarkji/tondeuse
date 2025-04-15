@@ -7,6 +7,37 @@ public class TondeuseAutomatique {
 
     }
 
+    private static List<String> readInputFile(String filePath) throws IOException { //process the text file to execute the instructions
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                lines.add(line.trim());
+            }
+        }
+        return lines;
+    }
+
+    private static Position executeInstructions(int x, int y, char orientation, String instructions, int maxX, int maxY) {
+        Position position = new Position(x, y, orientation);
+
+        for (char instruction : instructions.toCharArray()) { //each instruction is a char
+            switch (instruction) {
+                case 'G':
+                    position.turnLeft();
+                    break;
+                case 'D':
+                    position.turnRight();
+                    break;
+                case 'A':
+                    position.advance(maxX, maxY);
+                    break;
+            }
+        }
+
+        return position;
+    }
+
     static class Position {
         private int x;
         private int y;
