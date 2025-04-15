@@ -1,10 +1,34 @@
 import java.io.*;
 import java.util.*;
 
-public class TondeuseAutomatique {
+public class Mower {
 
     public static void main(String[] args) {
+    }
 
+
+
+    static List<Position> processMowers(List<String> lines) {
+        List<Position> results = new ArrayList<>(); //we may have more than one mower
+        String[] lawnDimensions = lines.get(0).split(" ");
+
+        int maxX = Integer.parseInt(lawnDimensions[0]);
+        int maxY = Integer.parseInt(lawnDimensions[1]);
+
+        for (int i = 1; i < lines.size(); i += 2) {
+            String initialPosition = lines.get(i);
+            String instructions = lines.get(i + 1);
+
+            String[] positionParts = initialPosition.split(" ");
+            int x = Integer.parseInt(positionParts[0]);
+            int y = Integer.parseInt(positionParts[1]);
+            char orientation = positionParts[2].charAt(0);
+
+            Position finalPosition = executeInstructions(x, y, orientation, instructions, maxX, maxY);
+            results.add(finalPosition);
+        }
+
+        return results;
     }
 
     private static List<String> readInputFile(String filePath) throws IOException { //process the text file to execute the instructions
@@ -21,7 +45,7 @@ public class TondeuseAutomatique {
     private static Position executeInstructions(int x, int y, char orientation, String instructions, int maxX, int maxY) {
         Position position = new Position(x, y, orientation);
 
-        for (char instruction : instructions.toCharArray()) { //each instruction is a char
+        for (char instruction : instructions.toCharArray()) { //each instruction is a char but we take in the intructions as a string
             switch (instruction) {
                 case 'G':
                     position.turnLeft();

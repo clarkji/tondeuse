@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tondeuse.iml" filepath="$PROJECT_DIR$/.idea/tondeuse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tondeuse.iml" filepath="$PROJECT_DIR$/tondeuse.iml" />
     </modules>
   </component>
 </project>
